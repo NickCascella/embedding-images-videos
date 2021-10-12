@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="index.css" />
+<html>
+  <head>
+    <title>YouTube</title>
+    <link
+      rel="shortcut icon"
+      type="img/svg"
+      href="images/nav/youtubeLogo.svg"
+    />
+  </head>
+  <nav>
+    <div class="navElement">
+      <img
+        class="navIconSizing navIconSpacingLeft"
+        src="images/nav/youtubeMenuBtn.svg"
+        alt="sidebar"
+      />
+      <div class="navIconSizing navIconSpacingLeft" id="youtubeHomeBtn">
+        <img src="images/nav/youtubeLogo.svg" alt="YoutubeLogo" />
+        <div style="padding-left: 5px; font-size: 19px">YouTube</div>
+      </div>
+    </div>
+    <div class="navElement" style="position: relative; left: 100px">
+      <input type="text" id="videoSearchInputText" placeholder="Search" />
+      <div class="navSpyglassContainer">
+        <img
+          src="images/nav/youtubeSpyglass.svg"
+          alt="Spyglass"
+          style="width: 30px"
+        />
+      </div>
+      <img class="navMic" src="images/nav/youtubeMic.png" alt="Microphone" />
+    </div>
+    <div class="navElement">
+      <img
+        class="navIconSizing navIconSpacingRight"
+        src="images/nav/youtubeCreateBtn.svg"
+        alt="createBtn"
+      />
+      <img
+        class="navIconSizing navIconSpacingRight"
+        src="images/nav/youtubeAppBtn.svg"
+        alt="youtubeAppsBtn"
+      />
+      <img
+        class="navIconSizing navIconSpacingRight"
+        src="images/nav/youtubeExtrasBtn.svg"
+        alt="notificationBtn"
+      />
+      <img
+        class="navIconSizing navIconSpacingRight"
+        src="images/nav/youtubeSigninBtn.svg"
+        alt="accountImg"
+      />
+    </div>
+  </nav>
+
+  <body class="belowNav">
+    <iframe
+      id="embeddedVideo"
+      src="https://www.youtube.com/embed/lJIrF4YjHfQ?autoplay=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      allow="autoplay"
+    ></iframe>
+    <div class="belowVideo">
+      <div class="videoDetails">
+        <div class="videoDescriptionHashtags">
+          <div class="videoHashtag">#TheseAreHashtags</div>
+          <div class="videoHashtag" style="padding-left: 10px">
+            #ICanWriteWhatIWant
+          </div>
+          <div class="videoHashtag" style="padding-left: 10px">#IAmHungry</div>
+        </div>
+        <div class="videoTitle">This is the VIDEO title!</div>
+        <div class="videoStats">
+          <div class="videoStatsViews">9,876,543 views . Oct 10, 2021</div>
+          <div class="videoStatsOther">
+            <div class="videoStatsLikes">
+              <div class="videoStyleLikeBtns">
+                <img
+                  class="navIconSizing videoDetailImgs"
+                  src="images/video/thumb-up.svg"
+                  alt="ThumbsUp"
+                />1k
+              </div>
+              <div class="videoStyleLikeBtns">
+                <img
+                  class="navIconSizing videoDetailImgs"
+                  src="images/video/thumb-down.svg"
+                  alt="ThumbsDown"
+                />0
+              </div>
+            </div>
+            <div class="otherVideoBtns">
+              <img
+                class="navIconSizing videoDetailImgs"
+                src="images/video/share.svg"
+                alt="ShareArrow"
+              />SHARE
+            </div>
+            <div class="otherVideoBtns">
+              <img
+                class="navIconSizing videoDetailImgs"
+                src="images/video/playlist-plus.svg"
+                alt="SaveIcon"
+              />SAVE
+            </div>
+            <div class="otherVideoBtns">
+              <img
+                class="navIconSizing"
+                src="images/video/dots-horizontal.svg"
+                alt="More"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="youtuberInfo">
+          <div id="profileInfo">
+            <img
+              class="navIconSizing navIconSpacingRight"
+              src="images/nav/youtubeSigninBtn.svg"
+              alt="accountImg"
+              style="width: 50px; position: relative; bottom: 10px"
+            />
+            <div id="profileNameAndSubscriberCount">
+              <div>Man I'm Disorganized</div>
+              <div class="subscriberDisplay">2 subscribers</div>
+              <p style="width: 50%; overflow-wrap: break-word">
+                This is the video description! Not sure what else to write here
+                but if you were to use this, I'm sure you would think of
+                something!
+              </p>
+            </div>
+          </div>
+          <div>
+            <button class="joinBtn">JOIN</button>
+            <button class="subscribeBtn">SUBSCRIBE</button>
+          </div>
+        </div>
+        <div id="commentSection">
+          <div class="amountOfCommentsSection">
+            <div>3 Comments</div>
+            <div class="sortCommentsBtn" style="margin-left: 35px">
+              <img
+                style="width: 25px"
+                src="images/video/sort.svg"
+                alt="sortby button"
+              />
+              <div style="margin-left: 10px">SORT BY</div>
+            </div>
+          </div>
+          <div class="leaveAComment">
+            <img
+              class="navIconSizing navIconSpacingRight"
+              src="images/nav/youtubeSigninBtn.svg"
+              alt="accountImg"
+              style="width: 40px"
+            />
+            <input
+              class="commentInput"
+              type="text"
+              placeholder="Add a public comment.."
+            />
+          </div>
+          <div id="commentHistory">
+            <div class="commentFormat">
+              <img
+                class="navIconSizing navIconSpacingRight"
+                src="images/video/profileOneImage.jpg"
+                alt="accountImg"
+                style="width: 40px; border-radius: 50%"
+              />
+              <div class="commentInfo">
+                <div class="commentNameAndDate">
+                  <div>SkyrimGuy</div>
+                  <div class="ageOfComment">1 month ago</div>
+                </div>
+                <div style="margin-top: 10px">Such a great video!</div>
+                <div class="commentInteraction">
+                  <img
+                    src="images/video/thumb-up.svg"
+                    alt="thumb-up"
+                    style="width: 15px"
+                  />
+                  <div>443</div>
+                  <img
+                    src="images/video/thumb-down.svg"
+                    alt="thumb-down"
+                    style="width: 15px"
+                  />
+                  <div>REPLY</div>
+                </div>
+              </div>
+            </div>
+            <div class="commentFormat">
+              <img
+                class="navIconSizing navIconSpacingRight"
+                src="images/video/profileTwoImage.jpg"
+                alt="accountImg"
+                style="width: 40px; border-radius: 50%"
+              />
+              <div class="commentInfo">
+                <div class="commentNameAndDate">
+                  <div>WhoAreYou89</div>
+                  <div class="ageOfComment">3 months ago</div>
+                </div>
+                <div style="margin-top: 10px">
+                  Wow this youtube page look alike is really something...don't
+                  look at the formatting though lol
+                </div>
+                <div class="commentInteraction">
+                  <img
+                    src="images/video/thumb-up.svg"
+                    alt="thumb-up"
+                    style="width: 15px"
+                  />
+                  <div>2k</div>
+                  <img
+                    src="images/video/thumb-down.svg"
+                    alt="thumb-down"
+                    style="width: 15px"
+                  />
+                  <div>REPLY</div>
+                </div>
+              </div>
+            </div>
+            <div class="commentFormat">
+              <img
+                class="navIconSizing navIconSpacingRight"
+                src="images/video/profiileThreeImage.jpg"
+                alt="accountImg"
+                style="width: 40px; border-radius: 50%"
+              />
+              <div class="commentInfo">
+                <div class="commentNameAndDate">
+                  <div>ILoveBeaches9284</div>
+                  <div class="ageOfComment">5 months ago</div>
+                </div>
+                <div style="margin-top: 10px">
+                  Down the youtube rabbit hole again...
+                </div>
+                <div class="commentInteraction">
+                  <img
+                    src="images/video/thumb-up.svg"
+                    alt="thumb-up"
+                    style="width: 15px"
+                  />
+                  <div>995</div>
+                  <img
+                    src="images/video/thumb-down.svg"
+                    alt="thumb-down"
+                    style="width: 15px"
+                  />
+                  <div>REPLY</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="videoRecommendations">
+        <div id="videoFilters">
+          <div class="videoFilter">All</div>
+          <div class="videoFilter">Raptors</div>
+          <div class="videoFilter">NBA</div>
+        </div>
+        <a
+          href="https://www.youtube.com/watch?v=nRe3xFeyhVY"
+          target="blank"
+          class="nextVideo"
+        >
+          <div class="videoThumbnail">
+            <img class="videoHoverImg" src="images/video/clock.svg" />
+            <img class="videoHoverImg" src="images/video/que.svg" />
+            <div class="thumbnailTimeStamp">21:10</div>
+          </div>
+          <div class="videoThumbnailText">
+            <div style="margin-top: 5px; padding-bottom: 3px">
+              This is a video with a cool title check it OUT!
+            </div>
+            <div class="subscriberDisplay">ExtraKrispy</div>
+            <div class="subscriberDisplay">332k views . 2 months ago</div>
+          </div>
+        </a>
+        <a
+          href="https://www.youtube.com/watch?v=OIcsxgfLNbM"
+          target="blank"
+          class="nextVideo"
+        >
+          <div
+            class="videoThumbnail"
+            style="background-image: url('images/video/miniMotorWays.jpg')"
+          >
+            <img class="videoHoverImg" src="images/video/clock.svg" />
+            <img class="videoHoverImg" src="images/video/que.svg" />
+            <div class="thumbnailTimeStamp">21:10</div>
+          </div>
+          <div class="videoThumbnailText">
+            <div style="margin-top: 5px; padding-bottom: 3px">
+              A video on MINIMOTORWAYS!
+            </div>
+            <div class="subscriberDisplay">MotorWaysGO</div>
+            <div class="subscriberDisplay">2k views . 1 month ago</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
